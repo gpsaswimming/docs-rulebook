@@ -1,0 +1,41 @@
+name: Build and Deploy Rulebook
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 'release'
+
+      - name: Install TinyTeX
+        run: quarto install tinytex
+
+      - name: Render Quarto project
+        run: quarto render
+
+      - name: Render Constitution PDF
+        run: cd constitution && quarto render
+
+      - name: Render Code of Conduct PDF
+        run: cd code-of-conduct && quarto render
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: gpsa-rulebook
+          directory: docs
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
