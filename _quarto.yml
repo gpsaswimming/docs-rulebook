@@ -11,7 +11,7 @@ book:
   title: "GPSA Rulebook"
   subtitle: "Greater Peninsula Swimming Association"
   author: "GPSA Rules Committee"
-  date: today
+  date: "January 2026"
   date-format: "MMMM YYYY"
   site-url: https://rulebook.gpsaswimming.org
   favicon: "favicon-32x32.png"
