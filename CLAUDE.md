@@ -42,7 +42,7 @@ quarto render --cache-refresh
 
 ## Deployment
 
-Push to `main` → GitHub Actions builds all formats → deploys `docs/` to Cloudflare Pages (`rulebook`).
+Push to `main` → GitHub Actions builds all formats → deploys `docs/` to Cloudflare Pages (`gpsa-rulebook`).
 
 **Required GitHub secrets:**
 - `CLOUDFLARE_API_TOKEN` — API token with Cloudflare Pages edit permissions
