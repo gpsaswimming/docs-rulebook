@@ -121,7 +121,7 @@ This section establishes the procedures and requirements for conducting GPSA dua
 3. **Meet Review and Optimization:** After merging entries, the home team GPSA Representative shall:
     a. Verify that all entries comply with GPSA participation rules (event limits, exhibition requirements, and maximum scoring entrants) and review proper event seeding.
     b. Work with both teams' coaches to consolidate heats and/or relocate exhibition swimmers where possible.
-4. **Required Materials:** Both teams shall prepare all necessary heat sheets, place judge forms, scoring materials, and official documentation as specified in the [GPSA Meet Preparation Guide](https://publicity.gpsaswimming.org/wiki/meet-preparation).
+4. **Required Materials:** Both teams shall prepare all necessary heat sheets, place judge forms, scoring materials, and official documentation as specified in the [GPSA Meet Preparation Guide](https://wiki.gpsaswimming.org/meet-preparation.html).
 
 5. **Heat Sheet and Score Publication:**
     a. Enabling heat sheet access on the SwimTopia Mobile App, or distributing heat sheets to parents (whether printed or electronic), requires the mutual agreement of both GPSA Representatives. Any disagreement shall default to not publishing or distributing.
