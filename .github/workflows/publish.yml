@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -36,10 +36,9 @@ jobs:
         run: cd code-of-conduct && quarto render
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: gpsa-rulebook
-          directory: docs
+          command: pages deploy docs --project-name=gpsa-rulebook --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
