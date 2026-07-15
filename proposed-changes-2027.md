@@ -67,3 +67,28 @@ The 2026 season produced the league's first tied dual meet (Beaconsdale 209 – 
 - Amend `awards.md:21` so the tiebreaker explicitly handles a tied head-to-head meet (fall through to total points among tied teams).
 
 ---
+
+## Missing or unusable time — no rule for a swim with no valid time
+
+**Status:** Draft / needs review
+
+**Locations:**
+- `conduct-of-meets.md:157–166` — Time Recording: lists the recording methods and collection process, but stops at "the timer records the swimmer's time."
+- `conduct-of-meets.md:83` — "stopwatches are recommended as backup even if using a timing system."
+- `officials.md:121` — Head Timer: starts a watch on every race; "the time of this watch shall be used if a Lane Timer's watch fails."
+- `officials.md:171,173` — Timing Equipment Operator advises the Referee of system problems; acknowledges meets may run *without* backup stopwatches.
+
+**Issue:**
+The rulebook covers how times are captured and a per-lane fallback (the Head Timer's watch when a Lane Timer's watch fails), but is silent on the case where a swim ends up with **no valid time at all** — a system or timer failure with no usable backup. It does not state:
+1. **What to record.** There is no rule that a swim with no valid time is recorded as a no-time (published as "NT"), nor any prohibition on fabricating a time or substituting the swimmer's seed time.
+2. **The precedence of electronic vs. backup times.** That an electronic time is official unless the system fails, in which case a backup time is used, is only *implied* (via `officials.md:121` for hand timing, and the Time Drops wiki page) — never stated as a general rule.
+3. **Who decides.** Nothing assigns the call — clear the time vs. attempt to reconstruct it — to the referee.
+
+Because GPSA scores by place, a missing time never affects the outcome; the gap is about the *record*, not the score. Interim decision-guidance now lives in the wiki ([Official Times](https://wiki.gpsaswimming.org/official-times), plus the Referee and Scorekeeper guides) as a practice standard, pending a rule.
+
+**Proposed fix:**
+- Add a "No valid time" provision to `conduct-of-meets.md` Time Recording: a swim with no usable time and no backup is recorded as a no-time (published "NT"); a time shall not be fabricated or taken from the swimmer's seed.
+- State the precedence explicitly: an electronic time is official unless the timing system fails, in which case the backup (Head Timer / stopwatch) time is used; if no backup time exists, the swim is a no-time.
+- Assign the call to the referee (in consultation with both GPSA Representatives when the cause is unclear).
+
+---
