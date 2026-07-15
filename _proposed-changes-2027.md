@@ -92,3 +92,72 @@ Because GPSA scores by place, a missing time never affects the outcome; the gap 
 - Assign the call to the referee (in consultation with both GPSA Representatives when the cause is unclear).
 
 ---
+
+## Correcting a time after the meet is certified
+
+**Status:** Rules Committee agreed — needs drafting into rule text
+
+**Locations:**
+- `conduct-of-meets.md:195–196` — Home GPSA Rep "Lock out changes in Meet Maestro and transfer results" and submit within 24 hours. This is the closest thing to a "certification" moment, but the rulebook never uses that term or says what may change afterward.
+- `conduct-of-meets.md:210–225` — Post-Meet Protests / Rules Committee Authority: the only existing post-meet correction pathways, but they are *protest-driven* and *score-driven*, not a general procedure for fixing a bad recorded **time**.
+
+**Issue:**
+The rulebook has no concept of a meet being "certified," and no procedure for correcting an individual recorded time after results are finalized. It does not state who may change a time, under what circumstances, or in which direction. Because GPSA scores by place, a bad time never changes a meet outcome — but it corrupts the swimmer's record and any time-based standards/seeding downstream, so a bounded correction path is needed.
+
+**Rules Committee decision (to be drafted):**
+After a meet is certified, a recorded time may be reviewed and changed only through one of two pathways:
+1. **Both GPSA Representatives and the Referee** convene to review the flagged times; or
+2. **The Rules Committee** reaches out to the affected teams to review the flagged times.
+
+In *either* pathway, the only times that may be changed are **obvious timing errors** — e.g., a 50-length time recorded against a 100-length event, or a physically impossible time — and only where the error gave the swimmer a **faster** time than it should have been. If the recorded error made the swimmer **slower** than actual, it may **not** be changed.
+
+**Proposed fix:**
+- Define "certified" (tie it to the `:195` lockout / transfer, or to a later confirmation step) so "after certification" has a fixed meaning.
+- Add the two review pathways and the one-directional "faster-only" correction rule to the Post-Meet or Protests section.
+- Clarify what "flagged times" means and who flags them (results tooling / GPSA Reps) so the trigger for a review is unambiguous.
+
+---
+
+## Timing-system hierarchy during the meet — electronic time is primary
+
+**Status:** Rules Committee agreed — needs drafting into rule text
+
+**Locations:**
+- `conduct-of-meets.md:160,162` — Electronic Timing System (Time Drops) captures times automatically; Lane Timer Sheets "may be used ... as backup with electronic timing systems."
+- `officials.md:121` — Head Timer's watch "shall be used if a Lane Timer's watch fails."
+- **Related staging item above** — "Missing or unusable time" already flags that the precedence of electronic vs. backup times is only *implied*, never stated. This decision supplies that rule; the two items should be drafted together.
+
+**Issue:**
+The rulebook implies but never states that the electronic time governs. There is no rule preventing a watch time from being substituted simply because it is more favorable to the swimmer.
+
+**Rules Committee decision (to be drafted):**
+The hierarchy of timing systems must be upheld. When Time Drops is in use, a watch time may be used **only** if Time Drops had a system error or failure for that swim. A watch time being more favorable is **not**, by itself, grounds to use it over the electronic time.
+
+**Proposed fix:**
+- State the precedence explicitly in Time Recording: the electronic (Time Drops) time is official unless the system failed for that swim, in which case the backup (Head Timer / watch) time is used.
+- Prohibit substituting a backup time merely because it is faster/more favorable.
+- Draft alongside the "Missing or unusable time" item so precedence and no-valid-time rules read as one provision.
+
+---
+
+## Timer configuration per lane — 1 or 3 on one system, 2 only when split
+
+**Status:** Rules Committee agreed — needs drafting into rule text
+
+**Locations:**
+- `conduct-of-meets.md:89` — "By mutual agreement of both GPSA Representatives, teams may use two or three timers per lane instead of the standard one timer per lane."
+- `officials.md:123` — Lane Timer "may simultaneously operate two dissimilar devices (one watch and one button) but not two similar devices."
+- `officials.md:135` — "a. If two timers are used, the times must be averaged. If three timers are used, the middle time must be used."
+
+**Issue:**
+The current two/three-timer allowance (`conduct-of-meets.md:89`) and the averaging rule (`officials.md:135a`) permit two timers on the **same** system (e.g., two watches averaged). The Committee's decision disallows that configuration, so the existing averaging rule for two timers no longer fits and must be amended.
+
+**Rules Committee decision (to be drafted):**
+Timers shall be staffed either **one (1) or three (3) per lane using the same timing system**. A **two (2)-timer** configuration is permitted **only** when the timers are split across systems — one on Time Drops and one on a watch as backup — never two on the same system.
+
+**Proposed fix:**
+- Revise `conduct-of-meets.md:89` to state the allowed configurations: 1 or 3 per lane on one system, or 2 only when split (Time Drops + watch backup).
+- Amend `officials.md:135a` — the "two timers averaged" case no longer applies to two same-system timers; averaging is not used for the split (Time Drops + watch) configuration, where the electronic time governs per the hierarchy item above.
+- Reconcile with `officials.md:123` (one person operating two dissimilar devices) so device-count vs. timer-count rules don't contradict.
+
+---
