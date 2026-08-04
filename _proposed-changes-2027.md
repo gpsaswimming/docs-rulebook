@@ -112,9 +112,66 @@ After a meet is certified, a recorded time may be reviewed and changed only thro
 In *either* pathway, the only times that may be changed are **obvious timing errors** — e.g., a 50-length time recorded against a 100-length event, or a physically impossible time — and only where the error gave the swimmer a **faster** time than it should have been. If the recorded error made the swimmer **slower** than actual, it may **not** be changed.
 
 **Proposed fix:**
-- Define "certified" (tie it to the `:195` lockout / transfer, or to a later confirmation step) so "after certification" has a fixed meaning.
+- Define "certified" (tie it to the `:195` lockout / transfer, or to a later confirmation step) so "after certification" has a fixed meaning. **This has become urgent — see the next section.**
 - Add the two review pathways and the one-directional "faster-only" correction rule to the Post-Meet or Protests section.
 - Clarify what "flagged times" means and who flags them (results tooling / GPSA Reps) so the trigger for a review is unambiguous.
+
+---
+
+## Defining the certifying moment — the submission tool now depends on it
+
+**Status:** For discussion, September 2026 Board meeting. Software has taken an interim
+position that the Board should either ratify or overrule.
+
+**Locations:**
+- `conduct-of-meets.md:184–187` — Referee: verify order of finish entered, **complete the Meet Referee Verification of Scores form**, deliver heat sheet.
+- `conduct-of-meets.md:190–192` — Scorekeeper: deliver all meet artifacts to the home GPSA Representative.
+- `conduct-of-meets.md:194–196` — Home GPSA Rep: lock out Meet Maestro, transfer results, submit within 24 hours.
+
+**Issue:**
+
+The 2027 results pipeline withholds friendship meets and time trials from publication on the
+principle that **the publish / don't-publish split is the certified / uncertified split** —
+those meets are not published because no official ever attested to them. That principle only
+works if "certified" names a specific act.
+
+Nothing in an SDIF export records that a meet was certified, by whom, or when, so the
+submission tool cannot verify it and instead asks the submitting Representative to attest to
+it. It therefore has to name **one** act, and the rulebook does not currently supply one.
+
+The obvious candidate is *not* the right one. The tool originally asked the Representative to
+confirm the results were "locked and certified in Meet Maestro" (`:195`). Two problems:
+
+1. **Meet Maestro will not export an unlocked meet.** The lockout is proved by the file
+   existing at all, so the attestation asserted a guarantee already in hand.
+2. **`:195` does not use the word "certified."** It says only *"Lock out changes in Meet
+   Maestro and transfer results."*
+
+**Interim position now in the software:**
+
+The attestation was changed to point at **`:185` — the Meet Referee completing the
+Verification of Scores form.** That reading treats certification as an act of an *official*
+rather than of an administrator, which is consistent with how the rest of the rulebook uses
+"certified" (`officials.md`, `eligibility-and-rosters.md`), and it is the only step in the
+post-meet sequence that a system genuinely cannot see. The Representative is holding that
+paperwork when they submit, because the scorekeeper hands it to them at `:192`.
+
+**What the Board needs to decide:**
+
+1. **Is the certifying moment `:185` (Referee's Verification of Scores form) or `:195` (Rep's
+   lockout and transfer)?** Both are defensible. `:185` is an official's act and matches the
+   certified/uncertified publication rule; `:195` is the last step before results leave the
+   pool and is what the existing "after certification" time-correction pathway informally
+   points at.
+2. **Does the answer differ by meet type?** Invitationals are certified by an Admin Official
+   before meet closure; duals by the Meet Referee after the meet. Friendship meets and time
+   trials have no certifying authority at all — which is *why* they do not publish.
+3. **Should the attestation name a person?** Recording *which* referee certified would make
+   the audit trail meaningful rather than a bare checkbox, at the cost of one more field for
+   the Representative to fill in.
+
+Whatever is decided should be written into `conduct-of-meets.md` so "certified" has a fixed
+meaning, and the preceding section's time-correction pathway inherits it.
 
 ---
 
